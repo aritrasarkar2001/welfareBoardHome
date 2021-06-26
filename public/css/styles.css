@@ -1,0 +1,177 @@
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+   
+
+.text-sm{
+      padding: 6px;
+      display:inline;
+      font-family:Calibri ;
+     
+      
+    }
+    
+.navigationBar{
+  display:inline ;
+ 
+}
+
+#topNav{
+      font-family: calibri;
+      margin-left:110px;
+      list-style-type: none;
+      padding-bottom: 10px ;
+      vertical-align: middle;
+     
+    }
+    
+   
+ #home{
+      display: inline;
+      font-family: calibri;
+      color:rgb(255, 255, 255);
+      border:3px solid black ;
+      background-color:  rgb(20, 33, 58) ;
+      padding: 8px;
+    }
+
+ #topNav li a{
+      float :left;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration:none;
+      
+     }
+
+    
+    #bottomNav{
+      font-family: calibri;
+      margin-left:50px;
+      list-style-type: none;
+      
+    }
+
+    
+
+    #bottomNav li a {
+      float :left;
+      color: rgb(8, 8, 8);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration:none;
+     
+    }
+    
+    #secHome{
+      display: inline;
+      
+      color: blue;
+     
+    }
+
+ .welcome{
+ 
+   font-family: calibri;
+   margin-left:150px;
+   margin-top:110px;
+   margin-right:450px;
+  
+   }
+
+ p{
+   font-size: large;
+ }
+
+/*
+#content {
+  font-family: calibri;
+  background-color: #bbc2bf;
+  color: white;
+  padding: 16px;
+  font-size: 6px;
+  border: none;
+ 
+}
+
+.dropdown {
+  
+  float: right;
+  margin-top:110px;
+  margin-right:150px;
+}
+
+.sideNavBar {
+  font-family: calibri;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #afb9b0;}
+*/
+
+   
+
+/*slideshow */
+
+    * {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1200px;
+position: relative;
+margin: auto;
+
+
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+background-color: #f1f1f1;
+color: black;
+}

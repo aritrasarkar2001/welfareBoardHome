@@ -1,0 +1,79 @@
+<html>
+<%- include("./partials/head.ejs") %>
+    <body>
+        <div class="header">
+              <span class="logo">
+                <img src="./public/images/iit_logo.png" alt="1200px-IIT-Guwahati-Logo-1" border="0" />
+              </span>
+              <span class="title">
+                <h3 class="text-sm ">
+                  INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI
+                </h3>
+              </span>
+            </div>
+
+            <%- include("./partials/topNav.ejs") %>
+           
+
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="./public/images/img_nature_wide.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="./public/images/img_snow_wide.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="./public/images/img_mountains_wide.jpg" style="width:100%">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+
+            <%- include("./partials/bottomNav.ejs") %>
+
+
+            <script>
+              var slideIndex = [1,1];
+              var slideId = ["mySlides1", "mySlides2"]
+              showSlides(1, 0);
+              
+              function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+              }
+              
+              function showSlides(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}    
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex[no]-1].style.display = "block";  
+              }
+              </script>
+                
+                
+
+              <div class="welcome">
+                <H1 id="welfareBoardHeading">Welcome to Welfare Board, IIT Guwahati</H1>
+                <div class="aboutWelfare">
+                <H2 id="about">About</H2>
+                <p>Student's Welfare Board (SWB) is committed to the total development of the students of IIT-Guwahati. The Welfare Service forms part of Campus Well-being Services and is committed to providing free professional and confidential support to enhance the well-being of the campus community. Based on the founding principles of the university, SWB implements programs and activities designed to nurture and develop the mind, body, and spirit.</p>
+              </div>
+                <div class="ourVision">
+                <H2 id="vision">Our Vision</H2>
+                <P>Student Welfare Board will provide opportunities for students to develop the skills necessary to successfully transition into the University and campus life, their sport or program, and the community. Through educational programming and a host of other additional resources, SWB will empower every student to make positive decisions in order to reach their full potential as students and citizens.</P>
+              </div></div>
+
+              
+
+              <%- include("./partials/footer.ejs")%>
+
+
+      </body>
+</html>
