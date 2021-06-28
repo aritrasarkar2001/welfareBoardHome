@@ -1,7 +1,15 @@
+*{
+  font-family: calibri;
+}
+
+
+
 .header{
     display:flex;
     align-items: center;
     justify-content: center;
+    padding-top:15px;
+    
   }
    
    
@@ -9,37 +17,43 @@
 .text-sm{
       padding: 6px;
       display:inline;
-      font-family:Calibri ;
-     
-      
-    }
+      font-family:calibri ;
+ }
     
-.navigationBar{
-  display:inline ;
+   
+
+ #welfare{
+  display: inline;
+  
+  color:rgb(255, 255, 255);
+  border:3px solid rgb(20, 33, 58)  ;
+  background-color:  rgb(20, 33, 58) ;
+  padding:10px;
+}
+
+
+
+
+
+
+.topNav{
+  
+  display: flex;
+  margin-top:30px;
+  margin-left:110px;
+  list-style-type: none;
+ 
+  
  
 }
 
-#topNav{
-      font-family: calibri;
-      margin-left:110px;
-      list-style-type: none;
-      padding-bottom: 10px ;
-      vertical-align: middle;
-     
-    }
     
    
- #home{
-      display: inline;
-      font-family: calibri;
-      color:rgb(255, 255, 255);
-      border:3px solid black ;
-      background-color:  rgb(20, 33, 58) ;
-      padding: 8px;
-    }
 
- #topNav li a{
-      float :left;
+    
+
+    .topNav li a{
+     
       color: rgb(8, 8, 8);
       text-align: center;
       padding: 14px 16px;
@@ -47,18 +61,20 @@
       
      }
 
+
     
-    #bottomNav{
-      font-family: calibri;
+    .bottomNav{
+      display: flex;
       margin-left:50px;
       list-style-type: none;
+     
       
     }
 
     
 
-    #bottomNav li a {
-      float :left;
+    .bottomNav li a {
+     
       color: rgb(8, 8, 8);
       text-align: center;
       padding: 14px 16px;
@@ -66,7 +82,7 @@
      
     }
     
-    #secHome{
+    #Home{
       display: inline;
       
       color: blue;
@@ -75,10 +91,10 @@
 
  .welcome{
  
-   font-family: calibri;
+ 
    margin-left:150px;
-   margin-top:110px;
-   margin-right:450px;
+   margin-top:120px;
+   margin-right:520px;
   
    }
 
@@ -86,7 +102,44 @@
    font-size: large;
  }
 
+ a:hover{
+    
+  font-weight: bold;
+}
+
+ .sideNav{
+  
+   float :right;
+   margin-top: 140;
+   margin-right: 100;
+   list-style-type: none;
+   font-size: large;
+  }
+
+
+   .sideNav li a {
+    
+    color: rgb(138, 133, 133);
    
+    text-decoration:none;
+
+  }
+
+
+  #contents{
+    font-weight:bolder;
+  }
+  
+
+ .aboutWelfare{
+   margin-top: 20px;
+ }
+
+ .ourVision{
+   margin-top: 30px;
+ }
+
+
 
 /*slideshow */
 
@@ -120,6 +173,7 @@ font-size: 18px;
 transition: 0.6s ease;
 border-radius: 0 3px 3px 0;
 user-select: none;
+text-decoration:none;
 }
 
 /* Position the "next button" to the right */
@@ -132,4 +186,27 @@ border-radius: 3px 0 0 3px;
 .prev:hover, .next:hover {
 background-color: #f1f1f1;
 color: black;
+}
+
+
+.card{
+  border: 0px  !important;
+  border-bottom: 2px solid rgba(0,0,0,.125) !important;;
+}
+.card-text{
+  font-size: smaller;
+}
+
+.card-title{
+  font-weight: bold;
+}
+
+.read_more span{
+  color: rgb(18, 18, 73);
+  font-size: smaller;
+}
+
+
+.achievements{
+  margin-left: 150px;
 }
