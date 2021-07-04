@@ -2,101 +2,286 @@
   font-family: calibri;
 }
 
-
-
 .header{
     display:flex;
     align-items: center;
     justify-content: center;
     padding-top:15px;
-    
+
   }
    
    
-
-.text-sm{
-      padding: 6px;
-      display:inline;
-      font-family:calibri ;
- }
-    
-   
-
- #welfare{
-  display: inline;
   
-  color:rgb(255, 255, 255);
-  border:3px solid rgb(20, 33, 58)  ;
-  background-color:  rgb(20, 33, 58) ;
-  padding:10px;
-}
-
-
-
-
-
-
-.topNav{
   
-  display: flex;
-  margin-top:30px;
-  margin-left:110px;
-  list-style-type: none;
- 
-  
- 
-}
-
-    
-   
-
-    
-
-    .topNav li a{
-     
-      color: rgb(8, 8, 8);
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration:none;
-      
-     }
-
-
-    
-    .bottomNav{
-      display: flex;
-      margin-left:50px;
-      list-style-type: none;
-     
-      
-    }
-
-    
-
-    .bottomNav li a {
-     
-      color: rgb(8, 8, 8);
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration:none;
-     
-    }
-    
-    #Home{
-      display: inline;
-      
-      color: blue;
-     
-    }
-
- .welcome{
- 
- 
-   margin-left:150px;
-   margin-top:120px;
-   margin-right:520px;
-  
+  .text-sm{
+        padding: 6px;
+        display:inline;
+        font-family:calibri ;
+        font-size: normal;
    }
+      
+     
+  
+   #welfare{
+    display: inline;
+    
+    color:rgb(255, 255, 255);
+    border:3px solid rgb(20, 33, 58)  ;
+    background-color:  rgb(20, 33, 58) ;
+    padding:10px;
+  }
+  
+  
+  
+  
+  /*Top Nav Bar*/
+  
+  .topNav{
+    
+    display: flex;
+    margin-top:30px;
+    margin-left:150px;
+    list-style-type: none;
+    font-size: larger;
+    font-weight: 400;
+   
+    
+  }
+  
+
+  .topNav a:hover{
+    background-color:rgb(228, 228, 222); ;
+  }
+
+ 
+      
+     
+  
+      
+  
+      .topNav li a{
+       
+        color: rgb(8, 8, 8);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration:none;
+        
+       }
+  
+  
+    /*Bottom Nav Bar*/   
+     
+    .navbar {
+      -webkit-box-shadow: 0 8px 6px -6px #999;
+      -moz-box-shadow: 0 8px 6px -6px #999;
+      box-shadow: 0 6px 6px -6px rgb(179, 178, 178);
+      max-width:100% ;
+      margin:auto;
+      color:rgb(252, 252, 252)
+  
+     
+  }
+
+    .bottomNav .nav-item a {
+      color:rgb(0, 0, 0);
+      font-weight:500;
+      font-size: large;
+      margin-left:30px ;
+   }
+   
+   
+   .nav-item a:hover{
+     
+     background-color: rgb(228, 228, 222);
+   }
+   
+   #home{
+      color:blue;
+      padding-left: 40px;
+   }
+
+  
+.welcome{
+   
+   
+     margin-left:150px;
+     margin-top:120px;
+     margin-right:520px;
+     font-size: larger;
+     }
+  
+   p{
+     font-size: larger;
+   }
+  
+  
+  
+  #contentHead{
+    display:inline ;
+  }
+  
+  .middle{
+    float:right;
+    margin:150px;
+    border-left: 3px solid rgb(133, 129, 129);
+    font-size: larger;
+    
+   
+  }
+  
+  
+  
+  
+    
+  
+   .aboutWelfare{
+     margin-top: 20px;
+   }
+  
+   .ourVision{
+     margin-top: 30px;
+   }
+  
+  
+  
+  /*slideshow */
+  
+      * {box-sizing: border-box}
+  .mySlides1 {display: none}
+  img {vertical-align: middle;
+   
+  
+  }
+  
+  /* Slideshow container */
+  
+    .slideshow-container {
+      max-width: 95%;
+      position: relative;
+      margin: auto;
+      
+  
+
+  }
+
+  
+  /* Next & previous buttons */
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration:none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+  }
+  
+
+  /*
+    Achievements
+  */
+  
+  .card{
+    border: 0px  !important;
+    border-bottom: 2px solid rgba(0,0,0,.125) !important;;
+  }
+  .card-text{
+    font-size: smaller;
+  }
+  
+  .card-title{
+    font-weight: bold;
+  }
+  
+  .read_more span{
+    color: rgb(18, 18, 73);
+    font-size: smaller;
+  }
+  
+  
+  .achievements{
+    margin-left: 150px;
+  }
+
+
+  
+  /* Announcements */
+  .announcements{
+    margin-left:150px;
+    margin-top:120px;
+    margin-right:450px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .announce{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+  }
+  
+  .box{
+    background: #FFFFFF;
+    border: 1px solid #D7DDE1;
+    border-radius: 4px;
+    padding: 40px;
+  }
+  
+  .boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .info{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .date{
+    font-size: smaller;
+  }
+  
+  
+  
+  .content{
+    font-weight: normal;
+  }
+   
+   .nav-item a:hover{
+     color:rgb(0, 0, 0);
+     background-color: rgb(228, 228, 222);
+   }
+   
+   #home{
+      color:blue;
+      margin-left: 20px;
+   }
+   
+   
+   
+    
+   
+
+
 
  p{
    font-size: large;
@@ -104,16 +289,18 @@
 
  a:hover{
     
-  font-weight: bold;
+  color:black;
 }
 
  .sideNav{
-  
+   
    float :right;
    margin-top: 140;
-   margin-right: 100;
+   margin-right: 150;
    list-style-type: none;
    font-size: large;
+  
+ 
   }
 
 
@@ -122,6 +309,7 @@
     color: rgb(138, 133, 133);
    
     text-decoration:none;
+    
 
   }
 
@@ -131,82 +319,5 @@
   }
   
 
- .aboutWelfare{
-   margin-top: 20px;
- }
+ 
 
- .ourVision{
-   margin-top: 30px;
- }
-
-
-
-/*slideshow */
-
-    * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;
-
-}
-
-/* Slideshow container */
-.slideshow-container {
-max-width: 1200px;
-position: relative;
-margin: auto;
-
-
-
-}
-
-/* Next & previous buttons */
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-padding: 16px;
-margin-top: -22px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-text-decoration:none;
-}
-
-/* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-background-color: #f1f1f1;
-color: black;
-}
-
-
-.card{
-  border: 0px  !important;
-  border-bottom: 2px solid rgba(0,0,0,.125) !important;;
-}
-.card-text{
-  font-size: smaller;
-}
-
-.card-title{
-  font-weight: bold;
-}
-
-.read_more span{
-  color: rgb(18, 18, 73);
-  font-size: smaller;
-}
-
-
-.achievements{
-  margin-left: 150px;
-}
